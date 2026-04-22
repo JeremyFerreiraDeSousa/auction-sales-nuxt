@@ -1,0 +1,15 @@
+.title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-800 dark:text-white;
+}
+
+.second-title {
+    @apply text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-800 dark:text-white;
+}
+
+.third-title {
+  @apply text-lg lg:text-xl font-bold text-neutral-800 dark:text-white;
+}
+
+.inline-link {
+  @apply inline-flex items-center gap-2 text-sm font-medium text-neutral-600 dark:text-neutral-400 transition-colors hover:text-neutral-900 dark:hover:text-neutral-600
+}

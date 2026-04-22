@@ -1,0 +1,27 @@
+.page-container {
+  @apply max-w-7xl mx-auto px-6 md:px-10;
+}
+
+.top-tiny-spacing {
+  @apply pt-12;
+}
+
+.top-spacing {
+  @apply pt-18 lg:pt-24;
+}
+
+.bottom-spacing {
+  @apply pb-18 lg:pb-24
+}
+
+.content-stack {
+  @apply space-y-6 md:space-y-10;
+}
+
+.text-stack {
+  @apply space-y-3
+}
+
+.interactive-card {
+  @apply h-full rounded-2xl transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg overflow-hidden;
+}
