@@ -7,12 +7,12 @@ useHead({
     { rel: 'icon', href: '/favicon.ico' }
   ],
   htmlAttrs: {
-    lang: 'en'
+    lang: 'fr'
   }
 })
 
-const title = 'My auction app'
-const description = 'A production-ready starter template powered by Nuxt UI. Build beautiful, accessible, and performant applications in minutes, not hours.'
+const title = 'Auction Project'
+const description = 'Plateforme moderne de gestion de ventes aux enchères pour créer des ventes, gérer des lots et rechercher facilement l’ensemble du catalogue.'
 
 useSeoMeta({
   title,

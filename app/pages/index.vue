@@ -98,11 +98,11 @@ useSeoMeta({
     >
       <header class="text-stack text-center">
         <h2 class="second-title">
-          Featured lots
+          Lots en vedette
         </h2>
 
         <p class="max-w-2xl mx-auto text-base leading-6">
-          Discover a selection of lots currently available.
+          Découvrez une sélection de lots actuellement disponibles.
         </p>
       </header>
 
