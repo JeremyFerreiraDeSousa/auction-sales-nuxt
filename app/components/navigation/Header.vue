@@ -43,7 +43,7 @@ const items = computed<NavigationMenuItem[]>(() => [
         <UButton
           color="neutral"
           variant="ghost"
-          to="https://github.com/JeremyFerreiraDeSousa/auction-project"
+          to="https://github.com/JeremyFerreiraDeSousa/auction-sales-nuxt"
           target="_blank"
           icon="i-simple-icons-github"
           aria-label="GitHub"
