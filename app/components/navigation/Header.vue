@@ -11,6 +11,12 @@ const items = computed<NavigationMenuItem[]>(() => [
     active: route.path === '/sales'
   },
   {
+    label: 'Tous les lots',
+    to: '/lots',
+    icon: 'i-lucide-list',
+    active: route.path === '/lots'
+  },
+  {
     label: 'Créer une vente',
     to: '/sales/create',
     icon: 'i-lucide-plus',
