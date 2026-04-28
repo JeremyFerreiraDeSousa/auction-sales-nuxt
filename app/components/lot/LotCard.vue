@@ -4,6 +4,7 @@ import { formatCurrency } from '~/utils/formatCurrency'
 
 const props = defineProps<{
   lot: Lot
+  showSaleCta?: boolean
 }>()
 
 const formattedEstimate = computed(() => {
@@ -23,6 +24,7 @@ const formattedEstimate = computed(() => {
       <NuxtImg
         :src="lot.imageUrl"
         :alt="lot.title"
+        loading="lazy"
         width="800"
         height="520"
         class="h-56 w-full rounded-xl object-cover"
@@ -57,6 +59,22 @@ const formattedEstimate = computed(() => {
           <p class="mt-2 text-sm font-semibold text-neutral-900">
             {{ formattedEstimate }}
           </p>
+        </div>
+
+        <div
+          v-if="showSaleCta"
+          class="mx-auto mt-auto pt-3"
+        >
+          <UButton
+            :to="`/sales/${lot.saleId}`"
+            trailing-icon="i-lucide-arrow-right"
+            title="Voir la vente"
+            color="primary"
+            variant="outline"
+            size="xl"
+          >
+            Voir la vente
+          </UButton>
         </div>
       </div>
     </div>
