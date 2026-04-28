@@ -8,6 +8,15 @@ export const useLotsApi = () => {
     return api<Lot[]>('/lots')
   }
 
+  const getPaginatedLots = (page: number, limit: number) => {
+    return api<Lot[]>('/lots', {
+      query: {
+        _page: page,
+        _limit: limit
+      }
+    })
+  }
+
   const getLotById = (id: string) => {
     return api<Lot>(`/lots/${id}`)
   }
@@ -27,6 +36,7 @@ export const useLotsApi = () => {
 
   return {
     getLots,
+    getPaginatedLots,
     getLotById,
     getLotsBySaleId,
     createLot
